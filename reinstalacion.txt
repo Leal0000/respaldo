@@ -1,0 +1,86 @@
+--GENERAR LAS LLAVES PUBLICAS--
+
+  ssh-keygen -o -f ~/.ssh/id_rsa 
+
+  cat ~/.ssh/id_rsa.pub.
+
+
+--INSTALAR DJANGO--
+
+   apt install python3-django 
+
+   django --version
+--INSTALAR POSTGTRESQL--
+
+  sudo apt install postgresql postgresql-contrib
+
+--CONFIGURAR POSTGRESQL--
+
+  sudo su postgres
+
+  psql
+
+  create user admin10 with password 'admin1024';
+
+  alter user admin10 with superuser ;
+
+  grant all on database clima_confort to admin10;
+
+--INSTALAR PSYCOPG2--
+ 
+  apt-get install python3-psycopg2
+
+--INSTALAR NODE--
+
+  sudo apt-get install nodejs
+
+--INSTALAR NPM--
+
+sudo apt-get install npm
+
+--INSTALAR ANGULAR--
+
+apt install curl
+
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+
+source ~/.bashrc
+
+nvm install node
+
+npm install -g @angular/cli
+
+
+npm install -g @angular/cli@8
+
+
+--COMANDOS DE ANGULAR --
+
+--Crear una app con angular
+
+    Ng new miprimeraapp
+    
+--Arrancar el servidor Web
+
+    ng serve --open
+
+--Crear un componente--
+
+    ng g c empleado
+
+--Ëventos en angular
+
+http://www.w3bai.com/es/angular/angular_events.html
+
+--Instalacion de librerias 
+
+npm i bootstrap jquery popper.js --save   
+
+
+--CREAR UNA LLAVE SECRETA--
+
+>>> import uuid
+>>> uuid.uuid4().hex
+>>> '3bd4545131fe443e8e12dedec6169928'
+
+
