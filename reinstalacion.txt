@@ -20,13 +20,17 @@
 
   psql
 
+  create database climaconfort
+
   create user admin10 with password 'admin1024';
 
   alter user admin10 with superuser ;
 
-  grant all on database clima_confort to admin10;
+  grant all on database climaconfort to admin10;
 
 --INSTALAR PSYCOPG2--
+
+  apt install python3-pip
  
   apt-get install python3-psycopg2
 
@@ -83,4 +87,57 @@ npm i bootstrap jquery popper.js --save
 >>> uuid.uuid4().hex
 >>> '3bd4545131fe443e8e12dedec6169928'
 
+
+$ snap changes
+...
+123  Doing   2018-04-28T10:40:11Z  -  Install "foo" snap
+...
+
+$ sudo snap abort [ID] 
+
+
+deploy 
+
+
+https://docs.gitlab.com/ee/ci/examples/deployment/
+
+https://docs.gitlab.com/ee/ci/examples/
+
+
+
+
+--instalacion de firebird --
+
+
+
+
+sudo apt-get install libstdc++5
+sudo apt-get -y install libncurses5 libtommath1
+wget -c -P $HOME https://github.com/FirebirdSQL/firebi...
+tar -xzvf FirebirdSS-2.5.9.27139-0.amd64.tar.gz
+cd $HOME
+tar -xzvf FirebirdSS-2.5.9.27139-0.amd64.tar.gz
+cd FirebirdSS-2.5.9.27139-0.amd64
+sudo ./install.sh
+
+
+connect leal-virtual-machine:/home/leal/Documentos/databases_fdb/ejemplos.FDB user sysdba password leal0000;
+
+
+
+
+
+https://www.youtube.com/watch?v=CPH0N_QWm_w
+
+
+
+aws s3 ls s3://climacomfort-angular/
+08:27
+aws s3 sync . s3://climaconfort-angular --acl public-read
+aws s3 cp file  s3://climaconfort-angular --acl public-read
+
+Ben  08:47
+aws s3 sync . s3://climacomfort-angular/ --acl public-read
+08:52
+./.aws
 
